@@ -1,3 +1,25 @@
+
+## Deployment Automation
+
+This project includes a simple deployment script to automate updates on the EC2 instance.
+
+### deploy.sh
+
+The script performs the following actions:
+
+1. Pulls latest code from GitHub
+2. Builds a new Docker image
+3. Stops and removes the existing container (if running)
+4. Starts a new container on port 80
+
+### Usage
+
+Run the following command on the EC2 instance:
+
+```bash
+./deploy.sh 
+
+
 # AWS EC2 + Docker Web App Project
 
 ## Overview
